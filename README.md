@@ -4,7 +4,7 @@ A completely networked way to play Texas-Hold-Em Poker! Works with up to 9 playe
 
 ## Setup
 1. Python 3.11 or later is required. Install [here](https://www.python.org/downloads/).
-2. In root directory, run `python -m venv .venv` to create Python virtual environment
+2. In root project directory, run `python -m venv .venv` to create Python virtual environment
 3. Run the following command to activate the environment:
    - Windows (Command Prompt): `.venv\Scripts\activate`
    - Windows (PowerShell): `.venv\Scripts\Activate.ps1`
