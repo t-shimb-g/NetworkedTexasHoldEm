@@ -100,7 +100,7 @@ def ready_and_wait():
 
 
 if __name__ == '__main__':
-    HOST, PORT = 'localhost', 8080
+    HOST, PORT = '<update here>', 8080
 
     name = input("Input a player name: ")
 
