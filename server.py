@@ -212,11 +212,13 @@ if __name__ == '__main__':
 
     print("Server running on", (IP, PORT))
 
+    TIMEOUT = 30
+
     # {id: (player_connection, player_name)}
-    players = wait_for_connections(s, MAX_PLAYERS, 15)
+    players = wait_for_connections(s, MAX_PLAYERS, TIMEOUT)
     while len(players) < 2:
         print("Need at least 2 players. Reopening game")
-        players = wait_for_connections(s, MAX_PLAYERS, 30)
+        players = wait_for_connections(s, MAX_PLAYERS, TIMEOUT)
     print("Entering lobby...")
 
     game = TexasHoldEm(buyin=500, big_blind=50, small_blind=25, max_players=len(players))

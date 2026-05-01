@@ -100,8 +100,8 @@ def ready_and_wait():
 
 
 if __name__ == '__main__':
-    HOST, PORT = '<update here>', 8080
-
+    HOST = input("Enter IP address of the server: ")
+    PORT = input("Enter port of the server: ")
     name = input("Input a player name: ")
 
     print("Attempting to connect...")
